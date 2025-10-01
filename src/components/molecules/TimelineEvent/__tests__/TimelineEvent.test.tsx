@@ -2,14 +2,14 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi } from 'vitest';
 
-interface TimelineEventProps {
+type TimelineEventProps = {
   title: string;
   description?: string;
   timestamp: string;
   type?: 'default' | 'success' | 'warning' | 'error';
   onClick?: () => void;
   isSelected?: boolean;
-}
+};
 
 const TimelineEvent = ({
   title,

@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
 
-interface ZoomControlsProps {
+type ZoomControlsProps = {
   onZoomIn: () => void;
   onZoomOut: () => void;
   onReset: () => void;
@@ -11,7 +11,7 @@ interface ZoomControlsProps {
   minZoom?: number;
   maxZoom?: number;
   disabled?: boolean;
-}
+};
 
 const ZoomControls = ({
   onZoomIn,

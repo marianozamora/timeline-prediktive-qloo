@@ -2,13 +2,13 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi } from 'vitest';
 
-interface TimelineMarkerProps {
+type TimelineMarkerProps = {
   timestamp: string;
   isActive?: boolean;
   onClick?: () => void;
   position: number;
   type?: 'major' | 'minor';
-}
+};
 
 const TimelineMarker = ({
   timestamp,

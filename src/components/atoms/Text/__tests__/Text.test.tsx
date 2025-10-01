@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
-interface TextProps {
+type TextProps = {
   children: React.ReactNode;
   variant?: string;
   size?: string;
   className?: string;
   'data-testid'?: string;
-}
+};
 
 const Text = ({
   children,

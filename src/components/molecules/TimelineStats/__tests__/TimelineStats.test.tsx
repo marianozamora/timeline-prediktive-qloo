@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 
-interface TimelineStatsProps {
+type TimelineStatsProps = {
   totalEvents: number;
   selectedPeriod: string;
   avgEventsPerDay?: number;
   mostActiveDay?: string;
-}
+};
 
 const TimelineStats = ({
   totalEvents,

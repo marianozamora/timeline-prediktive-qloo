@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi } from 'vitest';
 import { Filter, Search } from 'lucide-react';
 
-interface TimelineHeaderProps {
+type TimelineHeaderProps = {
   title: string;
   subtitle?: string;
   onSearch?: (query: string) => void;
@@ -11,7 +11,7 @@ interface TimelineHeaderProps {
   searchValue?: string;
   showSearch?: boolean;
   showFilter?: boolean;
-}
+};
 
 const TimelineHeader = ({
   title,

@@ -2,20 +2,20 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi } from 'vitest';
 
-interface Lane {
+type Lane = {
   id: string;
   name: string;
   height?: number;
   color?: string;
-}
+};
 
-interface TimelineLanesProps {
+type TimelineLanesProps = {
   lanes: Lane[];
   onLaneClick?: (laneId: string) => void;
   selectedLaneId?: string;
   laneHeight?: number;
   showLabels?: boolean;
-}
+};
 
 const TimelineLanes = ({
   lanes,

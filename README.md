@@ -109,17 +109,17 @@ src/
 Events should follow this format:
 
 ```typescript
-interface TimelineItem {
+type TimelineItem = {
   id: number;
   name: string;
   startDate: string; // YYYY-MM-DD format
   endDate: string; // YYYY-MM-DD format
-}
+};
 ```
 
 ## Performance
 
-- Efficient lane allocation algorithm (O(n²) worst case, O(n) typical)
+- Efficient lane allocation algorithm
 - Memoized calculations for timeline bounds and markers
 - Optimized re-renders through React patterns
 - CSS transforms for smooth animations
