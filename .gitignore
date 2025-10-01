@@ -34,3 +34,9 @@ dist-ssr
 *.tgz
 .history
 
+
+*storybook.log
+storybook-static
+
+# Mac system files
+
